@@ -14,7 +14,7 @@ import java.util.List;
 @Table(name = "users")
 @Data
 @NoArgsConstructor
-class User implements UserDetails {
+public class User implements UserDetails {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
