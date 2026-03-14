@@ -30,7 +30,7 @@ public class AuthController {
     private final JwtService jwtService;
     private final UserDetailsService userDetailsService;
     private final PasswordEncoder passwordEncoder;
-    private UserRepository userRepository;
+    private final UserRepository userRepository;
 
     @PostMapping("/register")
     public ResponseEntity<?> register(@RequestBody RegisterRequest req){
